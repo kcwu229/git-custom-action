@@ -26,7 +26,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Load & cache dependencies
-        uses: ./github/actions/cache-deps/action.yml
+        uses: ./.github/actions/cache-deps
       - name: lint code
         run: npm run lint
       - name: Install dependencies
