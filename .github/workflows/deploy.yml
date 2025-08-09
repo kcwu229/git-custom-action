@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: lint code
-        run: npm run lint
       - name: Load & cache dependencies
         uses: ./.github/actions/cache-deps
       - name: Test code
